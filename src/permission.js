@@ -2,7 +2,7 @@ import router from './router'
 import {getToken, removeToken} from '@/utils/auth'
 import axios from "axios";
 
-const whiteList = ['/login'];
+const whiteList = ['/login','/'];
 
 router.beforeEach((to, from, next) => {
   const hasToken = sessionStorage.getItem('Admin-Token')

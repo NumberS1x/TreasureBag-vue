@@ -4,9 +4,10 @@
     <Header/>
     <!--    主体-->
     <div style="display: flex">
-      <!--      侧边栏-->
+      <div style="width: 10%;background-color: #0f9aee"></div>
       <!--      内容区域-->
-      <router-view style="flex:1;margin-left: 10%;margin-right: 10%"/>
+      <router-view style="flex:1;"/>
+      <div style="width: 10%;background-color: #0f9aee"></div>
     </div>
   </div>
 </template>
@@ -26,5 +27,12 @@ export default {
 </script>
 
 <style scoped>
-
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 设置 body 高度为 100% */
+}
+html {
+  height: 100%; /* 设置 html 高度为 100% */
+}
 </style>

@@ -45,12 +45,12 @@ export default {
 }
 
 .header {
-  height: 100px;
-  line-height: 80px; /* 垂直居中 */
+  height: 145px;
+  line-height: 140px; /* 垂直居中 */
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between; /* 标题和用户信息分散对齐 */
-  background-color: #68dcd1; /* 设置背景颜色 */
+  background-image: url('../assets/header.jpg');
 }
 
 .welcome {
@@ -64,7 +64,7 @@ export default {
 }
 
 .user-info {
-  padding-right: ; /* 右侧空白 */
+  padding-right: 30px; /* 右侧空白 */
 }
 
 </style>
