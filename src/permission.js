@@ -2,17 +2,16 @@ import router from './router'
 import {getToken, removeToken} from '@/utils/auth'
 import axios from "axios";
 
-const whiteList = ['/login','/'];
+const whiteList = ['/login'];
 
 router.beforeEach((to, from, next) => {
   const hasToken = sessionStorage.getItem('Admin-Token')
   if (hasToken) {
     //验证token是否过期
-
     if (to.path === '/login') {
       // 如果已经登录并尝试访问登录页面，则重定向到主页
       sessionStorage.removeItem('Admin-Token')
-      next('/');
+      next({ path: '/login' });
     } else {
       // 继续前往目标路由
       next();

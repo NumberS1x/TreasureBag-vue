@@ -12,7 +12,7 @@
             <span class="price1">{{ goods.seckilPrice }} 元 </span>
             <del><span class="price2">{{ goods.goodsPrice }} 元</span></del>
           </p>
-          <router-link :to="'/goods/to_detail/' + goods.id">
+          <router-link :to="'/goods/detail/' + goods.id">
             <button class="btn btn-default" type="submit">进入详情页...</button>
           </router-link>
         </div>

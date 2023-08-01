@@ -27,6 +27,16 @@ const router = new Router({
       path: '/goods/list',
       name: 'GoodsList',
       component: () => import("@/views/seckill/GoodsList")
+    },
+    {
+      path: '/goods/detail/:id',
+      name: "GoodsDetail",
+      component: () => import("@/views/seckill/GoodsDetail")
+    },
+    {
+      path: '/order/detail/:orderId',
+      name: "OrderDetail",
+      component: () => import("@/views/seckill/OrderDetail")
     }
   ]
 })
