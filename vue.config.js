@@ -1,5 +1,10 @@
 // 跨域配置
 module.exports = {
+  publicPath: '/',
+  outputDir: 'dist',
+  assetsDir: 'static',
+  lintOnSave: process.env.NODE_ENV === 'development',
+  productionSourceMap: false,
   devServer: {                //记住，别写错了devServer//设置本地默认端口  选填
     port: 9876,
     proxy: {                 //设置代理，必须填
@@ -7,7 +12,7 @@ module.exports = {
         target: 'http://localhost:3366',     //代理的目标地址
         changeOrigin: true,              //是否设置同源，输入是的
         pathRewrite: {                   //路径重写
-          '^/api': ''                     //选择忽略拦截器里面的内容
+          // '^/api': ''                     //选择忽略拦截器里面的内容,进行打包的时候记得把注释取消掉
         }
       }
     }

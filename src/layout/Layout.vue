@@ -4,10 +4,10 @@
     <Header/>
     <!--    主体-->
     <div style="display: flex">
-      <div style="width: 10%;background-color: #0f9aee"></div>
+      <div style="width: 10%;background-color: #fdfdfd"></div>
       <!--      内容区域-->
       <router-view style="flex:1;"/>
-      <div style="width: 10%;background-color: #0f9aee"></div>
+      <div style="width: 10%;background-color: #f3f3f3"></div>
     </div>
   </div>
 </template>
