@@ -20,6 +20,11 @@ const router = new Router({
           path: '',
           name: 'Home',
           component: () => import("@/views/Home")
+        },
+        {
+          path: '/logs',
+          name: "LogsInfo",
+          component: () => import("@/views/log/LogViewer")
         }
       ]
     },
@@ -37,7 +42,7 @@ const router = new Router({
       path: '/order/detail/:orderId',
       name: "OrderDetail",
       component: () => import("@/views/seckill/OrderDetail")
-    }
+    },
   ]
 })
 

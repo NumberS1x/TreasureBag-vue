@@ -1,15 +1,16 @@
 <template id="iconRow">
-  <div class="icon-row">
-    <div class="icon" style="background-color: orange" @click="goToPage1">
+  <div class="icon-row" style="display: flex">
+    <div class="icon" @click="goToPage1">
       <!-- 第一个图标 -->
-      <!-- 可以在这里添加您的图标图片或使用字体图标 -->
-      <img style="margin-top: 6px" src="../assets/seckill.jpg" alt="Icon 1">
+      <h4>秒杀系统</h4>
+      <img style="margin-top: 6px;width: 300px" src="../assets/seckill.jpg" alt="Icon 1">
     </div>
-<!--    <div class="icon" @click="goToPage2">-->
-<!--      &lt;!&ndash; 第二个图标 &ndash;&gt;-->
-<!--      &lt;!&ndash; 可以在这里添加您的图标图片或使用字体图标 &ndash;&gt;-->
-<!--      <img src="icon2.png" alt="Icon 2">-->
-<!--    </div>-->
+    <div class="icon" @click="goToPage2">
+      <!-- 第二个图标 -->
+      <!-- 可以在这里添加您的图标图片或使用字体图标 -->
+      <h4>日志</h4>
+      <img style="margin-top: 6px;width: 300px" src="../assets/logs.png" alt="Icon 2">
+    </div>
 
 <!--    <div class="icon" @click="goToPage3">-->
 <!--      &lt;!&ndash; 第三个图标 &ndash;&gt;-->
@@ -33,11 +34,10 @@ export default {
     goToPage1() {
       // 在这里添加跳转逻辑，比如使用 Vue Router 跳转到相应页面
       this.$router.push('/goods/list')
-      console.log('Go to Page 1');
     },
     goToPage2() {
       // 在这里添加跳转逻辑，比如使用 Vue Router 跳转到相应页面
-      console.log('Go to Page 2');
+      this.$router.push('/logs')
     },
     goToPage3() {
       // 在这里添加跳转逻辑，比如使用 Vue Router 跳转到相应页面
@@ -59,9 +59,12 @@ export default {
 
 .icon {
   margin: 20px 20px 20px 20px;
-  width: 25%; /* 四分之一宽度 */
+  width: 33%; /* 三分之一宽度 */
   text-align: center; /* 图标居中 */
   cursor: pointer; /* 鼠标悬停样式 */
+  background-color: #8fc0e8;
 }
+
+
 
 </style>
