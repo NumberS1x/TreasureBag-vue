@@ -43,6 +43,11 @@ const router = new Router({
       name: "OrderDetail",
       component: () => import("@/views/seckill/OrderDetail")
     },
+    {
+      path: '/easychat',
+      name: "EasyChat",
+      component: () => import("@/views/Chat")
+    }
   ]
 })
 

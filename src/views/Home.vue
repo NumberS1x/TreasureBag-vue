@@ -12,11 +12,12 @@
       <img style="margin-top: 6px;width: 300px" src="../assets/logs.png" alt="Icon 2">
     </div>
 
-<!--    <div class="icon" @click="goToPage3">-->
-<!--      &lt;!&ndash; 第三个图标 &ndash;&gt;-->
-<!--      &lt;!&ndash; 可以在这里添加您的图标图片或使用字体图标 &ndash;&gt;-->
-<!--      <img src="icon3.png" alt="Icon 3">-->
-<!--    </div>-->
+    <div class="icon" @click="goToPage3">
+      <!-- 第三个图标 -->
+      <!-- 可以在这里添加您的图标图片或使用字体图标 -->
+      <h4>聊天室</h4>
+      <img style="margin-top: 6px;width: 300px" src="../assets/chatlogo.png" alt="Icon 3">
+    </div>
 
 <!--    <div class="icon" @click="goToPage4">-->
 <!--      &lt;!&ndash; 第四个图标 &ndash;&gt;-->
@@ -41,7 +42,7 @@ export default {
     },
     goToPage3() {
       // 在这里添加跳转逻辑，比如使用 Vue Router 跳转到相应页面
-      console.log('Go to Page 3');
+      this.$router.push('/easychat')
     },
     goToPage4() {
       // 在这里添加跳转逻辑，比如使用 Vue Router 跳转到相应页面
