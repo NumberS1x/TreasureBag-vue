@@ -117,7 +117,8 @@ export default {
         console.log("您的浏览器不支持WebSocket");
       } else {
         console.log("您的浏览器支持WebSocket");
-        let socketUrl = "ws://localhost:3366/easychat/" + username;
+        let socketUrl = "ws://localhost:3366/easychat/" + username; //本地运行
+        // let socketUrl = "ws://62.234.27.56:3366/easychat/" + username; //云服务器中运行，要加上域名
         if (socket != null) {
           socket.close();
           socket = null;

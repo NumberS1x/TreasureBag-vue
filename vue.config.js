@@ -12,7 +12,7 @@ module.exports = {
         target: 'http://localhost:3366',     //代理的目标地址
         changeOrigin: true,              //是否设置同源，输入是的
         pathRewrite: {                   //路径重写
-          // '^/api': ''                     //选择忽略拦截器里面的内容,进行打包的时候记得把注释取消掉
+          '^/api': ''                     //选择忽略拦截器里面的内容,进行打包的时候记得把注释取消掉
         }
       }
     }
